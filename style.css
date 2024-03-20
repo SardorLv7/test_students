@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global styles */
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1640px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    background: #230070;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li a{
+    color: white;
+    opacity: 0.7;
+    margin-left: 16px;
+}
+
+/* main */
+main{
+    width: 100%;
+    background:rgb(17, 0, 53)0 ;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.hello{
+    background:#7a4ae223;
+    border-radius: 16px;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    padding-left: 10px;
+    color: #7B4AE2;
+}
+
+main h1{
+    font-size: 54px;
+    line-height: 63px;
+    margin-top: 24px;
+}
+
+.my_field{
+    margin-top: 24px;
+    font-size: 20px;
+    color: #ffffff72;
+}
+
+.icons{
+    margin-top: 24px;
+    color: #ffffff8c;
+    font-size: 32px;
+}
+
+.icons i{
+    margin-right: 16px;
+}
+
+
+main .my_photo{
+    margin-top: 13px;
+}
+
+
+.contact button{
+    display: flex;
+
+}
+
+.download,
+.phone{
+    color: #230070;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.phone{
+    border: 1px solid #230070;
+    border-radius: 16px;
+    padding: 10px 16px;
+}
+
+.download {
+    margin-left: 76px;
+    margin-bottom: 10px;
+}
+
+.download i{
+    margin-left: 4px;
+}
+
+.phone i {
+    margin-right: 8px;
+}
+.fa-solid {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    main img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:840px) {
+    main h1{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .about{
+        font-size: 22px;
+    }
+    .contact button{
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}
+@media screen and (max-width:702px) {
+    header ul{
+        display: none;
+    }
+    .fa-solid{
+        display: block;
+    }
+
+    .icons i{
+        font-size: 20px;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .hello{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    main{
+        width: 100%;
+        flex-shrink: 1;
+    }
+    header{
+        width: 100%;
+    }
+}
